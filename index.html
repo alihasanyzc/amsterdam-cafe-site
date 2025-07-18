@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMSTERDAM</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+<header class="bg-black fixed top-0 w-full text-white z-20 h-20">
+  <div class="container mx-auto grid grid-cols-6 items-center px-3 h-full">
+    <!-- Sol: Logo -->
+    <div class="flex justify-start items-center">
+      <a href="#home">
+        <img src="images/logo.png" alt="Logo" class="h-15 w-auto" />
+      </a>
+    </div>
+
+    <!-- Orta: Menü Linkleri -->
+    <nav class="flex justify-center col-span-4">
+      <ul class="flex gap-15 text-sm font-medium">
+        <li>
+          <a href="#home" class="hover:text-yellow-500 transition">Anasayfa</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-yellow-500 transition">Hakkımızda</a>
+        </li>
+        <li>
+          <a href="#menu" class="hover:text-yellow-500 transition">Menü</a>
+        </li>
+        <li>
+          <a href="#blog" class="hover:text-yellow-500 transition">Blog</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-yellow-500 transition">İletişim</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sağ: Boş alan (ileride ikonlar vs. koyabilirsin) -->
+    <div class="flex justify-end"></div>
+  </div>
+</header>
+
+
+    <section id="home" class="relative h-screen overflow-hidden">
+      <!-- Arka Plan Videosu -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/images/anasayfa_compressed.mp4" type="video/mp4" />
+        Tarayıcınız video öğesini desteklemiyor.
+      </video>
+
+      <!-- Koyu Filtre (daha okunaklı yazı için) -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- İçerik -->
+      <div
+        class="relative flex flex-col justify-center items-center text-center h-full text-white px-4 animate-fade"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+  Gerçek <span id="typed-text"></span>
+</h1>
+
+        <p class="text-lg md:text-xl max-w-xl">
+          El yapımı kahveler, taptaze çekirdekler ve samimi bir atmosfer.
+        </p>
+      </div>
+      
+    </section>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var typed = new Typed("#typed-text", {
+      strings: [ "<span style='color:#AB886D;'>Kahve</span>", "Hikaye"],
+      typeSpeed: 250,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+  });
+</script>
+    
+
+    <!-- Hakkımızda -->
+    <section id="about" class="relative h-screen overflow-hidden">
+  <!-- Arka Plan Görseli -->
+  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 hover:scale-110 z-20" 
+       style="background-image: url('images/about-bg2.png')">
+  </div>
+
+  <!-- Koyu Filtre -->
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  <!-- İçerik -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-center h-full text-white px-4">
+    <h2 class="text-4xl font-bold mb-4">Hakkımızda</h2>
+    <p class="max-w-2xl">
+      Kahve Dükkanımız 2010'dan beri en taze çekirdeklerle özel harmanlar hazırlıyor. 
+      Misafirlerimize keyifli bir ortam ve unutulmaz kahve deneyimi sunuyoruz.
+    </p>
+  </div>
+</section>
+
+
+    <!-- Menü -->
+    <section id="menu">
+      <h2>Menü</h2>
+      <p>Ürünlerimiz yakında burada listelenecek.</p>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <p>Blog yazılarımız yakında burada yer alacak.</p>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact">
+      <h2>İletişim</h2>
+      <form>
+        <label>Ad Soyad</label>
+        <input type="text" />
+        <label>E-posta</label>
+        <input type="email" />
+        <label>Mesajınız</label>
+        <textarea></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Kahve Dükkanım. Tüm hakları saklıdır.</p>
+    </footer>
+
+    
+  </body>
+</html>
