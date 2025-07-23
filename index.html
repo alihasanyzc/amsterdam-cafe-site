@@ -11,12 +11,12 @@
   </head>
   <body>
     <!-- Navbar -->
-<header class="bg-black fixed top-0 w-full text-white z-20 h-20">
+<header class="bg-black fixed top-0 w-full text-white z-40 h-20">
   <div class="container mx-auto grid grid-cols-6 items-center px-3 h-full">
     <!-- Sol: Logo -->
     <div class="flex justify-start items-center">
       <a href="#home">
-        <img src="images/logo.png" alt="Logo" class="h-15 w-auto" />
+        <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/logo.png" alt="Logo" class="h-15 w-auto" />
       </a>
     </div>
 
@@ -56,7 +56,7 @@
         playsinline
         class="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/images/anasayfa_compressed.mp4" type="video/mp4" />
+        <source src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/anasayfa_compressed.mp4" type="video/mp4" />
         Tarayıcınız video öğesini desteklemiyor.
       </video>
 
@@ -90,32 +90,78 @@
 </script>
     
 
-    <!-- Hakkımızda -->
-    <section id="about" class="relative h-screen overflow-hidden">
+<section id="about" class="relative h-screen overflow-hidden group ">
   <!-- Arka Plan Görseli -->
-  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 hover:scale-110 z-20" 
-       style="background-image: url('images/about-bg2.png')">
+  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 z-10 " 
+       style="background-image: url('https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/hakkımızdak.png');">
   </div>
+    
 
-  <!-- Koyu Filtre -->
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
   <!-- İçerik -->
-  <div class="relative z-10 flex flex-col items-center justify-center text-center h-full text-white px-4">
-    <h2 class="text-4xl font-bold mb-4">Hakkımızda</h2>
-    <p class="max-w-2xl">
+  <div class="relative flex flex-col items-center justify-center text-center h-full text-white px-4 z-30">
+    <h2 class="text-6xl font-bold mb-4">Hakkımızda</h2>
+    <p class="max-w-3xl text-2xl">
       Kahve Dükkanımız 2010'dan beri en taze çekirdeklerle özel harmanlar hazırlıyor. 
       Misafirlerimize keyifli bir ortam ve unutulmaz kahve deneyimi sunuyoruz.
     </p>
   </div>
 </section>
 
+  <section id="menu" class="  bg-black pt-10  ">
+  <div class="container mx-auto px-4">
+    <h2 class=" text-white font-bold text-center mb-8  text-4xl">Menü</h2>
+    
+    <!-- Menü Grid Buraya Gelecek -->
+    <div class="menu-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/latte.webp" alt="Ürün Adı" class="w-full h-60 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">LATTE</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+    <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/limonata.jpeg" alt="Ürün Adı" class="w-full h-60  object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">LİMONATA</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+    <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/frozen.jpg" alt="Ürün Adı" class="w-full h-60  object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">FROZEN</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+    <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/machiato.jpg" alt="Ürün Adı" class="w-full h-60  object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">MACHİATO</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+ <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/mocha.webp" alt="Ürün Adı" class="w-full h-60 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">MOCHA</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+ <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/sıcakc.jpg" alt="Ürün Adı" class="w-full h-60 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">SICAK ÇİKOLATA</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+ <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/btikic.webp" alt="Ürün Adı" class="w-full h-60 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">BİTKİ ÇAYI</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
+ <div class="bg-[#FFEAC5] shadow-md rounded-lg p-4 text-center transform transition-transform duration-300 hover:scale-105">
+  <img src="https://raw.githubusercontent.com/alihasanyzc/amsterdam-cafe-site/main/images/bubblet.webp" alt="Ürün Adı" class="w-full h-60 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold mb-2">BUBBLE TEA</h3>
+  <span class="text-lg font-bold text-yellow-600">₺45</span>
+</div>
 
-    <!-- Menü -->
-    <section id="menu">
-      <h2>Menü</h2>
-      <p>Ürünlerimiz yakında burada listelenecek.</p>
-    </section>
+
+      <!-- Kartlar buraya eklenecek -->
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Blog -->
     <section id="blog">
