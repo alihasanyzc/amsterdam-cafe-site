@@ -108,12 +108,25 @@
   </div>
 </section>
 
-  <section id="menu" class="  bg-black pt-10 h-screen ">
-  <div class="container mx-auto px-4 ">
-    <h2 class=" text-white font-bold text-center mb-5  text-4xl">Menü</h2>
-      <div class="flex justify-center gap-4 mb-4">
-      <button class="category-btn bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition" data-category="icecekler">İçecekler</button>
-      <button class="category-btn bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition" data-category="tatlilar">Tatlılar</button>
+  <section id="menu" class="bg-black pt-10 h-screen">
+  <div class="container mx-auto px-4 mt-13">
+    <!-- Grid yapısı: Sol-Orta-Sağ -->
+    <div class="grid grid-cols-3 items-center mb-8">
+      <!-- Sol: Menü başlığı -->
+      <div class="flex justify-start">
+        <h2 class="text-white font-bold text-4xl">Menü</h2>
+      </div>
+      
+      <!-- Orta: Butonlar -->
+      <div class="flex justify-center">
+        <div class="grid grid-cols-2 gap-4 w-80">
+          <button class="category-btn bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition" data-category="icecekler">İçecekler</button>
+          <button class="category-btn bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition" data-category="tatlilar">Tatlılar</button>
+        </div>
+      </div>
+      
+      <!-- Sağ: Boş alan -->
+      <div class="flex justify-end"></div>
     </div>
     
     <!-- Menü Grid Buraya Gelecek -->
@@ -186,11 +199,7 @@
 
       <!-- Kartlar buraya eklenecek -->
     </div>
-    <div class="flex justify-center mt-6 gap-2">
-      <button class="page-btn bg-black text-white px-3 py-2 rounded hover:bg-yellow-600" data-page="1">1</button>
-      <button class="page-btn bg-black text-white px-3 py-2 rounded hover:bg-yellow-600" data-page="2">2</button>
-      <button class="page-btn bg-black text-white px-3 py-2 rounded hover:bg-yellow-600" data-page="3">3</button>
-    </div>
+    
   </div>
 </section>
 
